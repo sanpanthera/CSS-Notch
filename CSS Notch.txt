@@ -1,0 +1,122 @@
+<div class="wrap">
+    <img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" />
+</div>
+
+
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height:150px;
+  margin: 0 auto;
+  background-color:#fff;
+}
+.wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.wrap:before, .wrap:after {
+  content:'';
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  background-color: inherit;
+  padding-bottom:2%;
+}
+.wrap:before {
+  right: 50%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -ms-transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  transform: skewX(67deg);
+}
+.wrap:after {
+  left: 50%;
+  -ms-transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -ms-transform: skewX(-45deg);
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-67deg);
+}
+
+
+---------------------------------
+
+//image left
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height:150px;
+  margin: 0 auto;
+  background-color:#fff;
+}
+.wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.wrap:before {    
+    transform: skewY(67deg);
+	top:0;
+}
+
+.wrap:before, .wrap:after {
+    transform-origin : 100% 100%;
+    content: '';
+    position: absolute;
+    right: 0;
+    background-color: inherit;
+    height: 50%;
+    padding-right: 2%;
+}
+
+.wrap:after {     
+    transform: skewY(-67deg);
+    top: 50%;
+}
+
+-------------------------------
+
+image right
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height:150px;
+  margin: 0 auto;
+  background-color:#fff;
+}
+.wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.wrap:before {    
+    transform: skewY(67deg);
+	top:50%;
+}
+
+.wrap:before, .wrap:after {
+    transform-origin : 0% 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+    height: 50%;
+    padding-left: 2%;    
+}
+
+.wrap:after {     
+    transform: skewY(-67deg);
+    top: 0%;
+}
+
+
